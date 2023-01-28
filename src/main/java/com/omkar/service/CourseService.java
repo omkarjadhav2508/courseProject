@@ -10,5 +10,6 @@ public interface CourseService {
 	public Courses addCourse(Courses course);
 	public void deleteCourse(int id);
 	public Courses update(Courses course);
+	public Courses getCourseByName(String title);
 	
 }

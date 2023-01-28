@@ -40,5 +40,11 @@ public class CourseServiceImpl implements CourseService {
 		// TODO Auto-generated method stub
 		return this.cDao.save(course);
 	}
+
+	@Override
+	public Courses getCourseByName(String title) {
+		// TODO Auto-generated method stub
+		return this.cDao.getCourseByName(title);
+	}
 	
 }

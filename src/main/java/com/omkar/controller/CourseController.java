@@ -48,4 +48,10 @@ public class CourseController {
 		
 		return ResponseEntity.ok().body(this.courseService.update(course));
 	}
+	
+	@GetMapping("/courses/{title}")
+	public ResponseEntity<Courses> getCourseByName(@PathVariable String title)
+	{
+		return ResponseEntity.ok().body(this.courseService.getCourseByName(title));
+	}
 }
